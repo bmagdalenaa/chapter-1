@@ -1,4 +1,4 @@
-//strings
+/* strings */
 console.log('Hello world');
 
 // String concatenation
@@ -49,4 +49,45 @@ console.log(subResult); //displays oworld@exa
 
 // Replaces a certain character in the string with another character.
 let replaceResult = email.replace('l','w')
-console.log(replaceResult);
+console.log(replaceResult); // displays hewloworld@example.com   --only replaces first letter found
+
+
+/* Numbers */
+// Order of operations BEDMAS
+// ** two stars means the power of
+// ++ adds one
+// -- minues one
+// += or -=  or *= or /= for the full equation 
+// eg. from above: likes = 10 ... likes - 1 =9 ... likes -= 2 would display 8.;
+// NaN means not a number .. would display if console.log(5 / 'hello') or any other equation is incompatible
+let mathResult = 5 * (10-3) ** 2;
+console.log(mathResult);
+
+/* arrays */
+//positions starts at 0
+// stores collection of data
+let ninjas = ['im', 'so', 'bored'];
+//console.log(ninjas[1]);     --displays 'so'
+//console.log(ninjas);      --displays ['im', 'so', 'bored']
+
+// to override a position in the array
+ninjas[1] = 'very';
+//console.log(ninjas); // displays ['im', 'very', 'bored']
+//console.log(ninjas[1]); // displays very
+//console.log(ninjas.length); // displays the elements length which is 3
+
+let joinResult = ninjas.join(','); //join: elements inside aray into a single string and it joins them with commas
+//console.log(joinResult); //im,very,bored
+let iResult = ninjas.indexOf('bored');
+//console.log(iResult); //displays 2 for the position
+
+let addResult = ninjas.concat('really', 'very'); // adds to the array
+//console.log(addResult); //displays ['im', 'very', 'bored', 'really', 'very']
+
+let pResult = ninjas.push('cool'); // alters the original value of the array
+console.log(ninjas); //displays ['im', 'very', 'bored', 'cool']
+console.log(pResult); //displays 4 .. returns the length of the new array
+
+let popResult = ninjas.pop(); // Takes off the end values so it just adds cool
+console.log(popResult); // displays 'cool'
+console.log(ninjas); // displays ['im', 'very', 'bored'] after using pop()
