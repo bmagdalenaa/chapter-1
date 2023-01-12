@@ -63,6 +63,13 @@ console.log(replaceResult); // displays hewloworld@example.com   --only replaces
 let mathResult = 5 * (10-3) ** 2;
 console.log(mathResult);
 
+let score = '100';
+//console.log(score + 1); // displays 1001
+score = Number(score); // forces score to become a number
+console.log(score + 1); // displays 101
+
+console.log(typeof score); //displays number 
+
 /* arrays */
 //positions starts at 0
 // stores collection of data
@@ -91,3 +98,13 @@ console.log(pResult); //displays 4 .. returns the length of the new array
 let popResult = ninjas.pop(); // Takes off the end values so it just adds cool
 console.log(popResult); // displays 'cool'
 console.log(ninjas); // displays ['im', 'very', 'bored'] after using pop()
+
+/* Booleans and comparisons */
+// Not the same thing. Yellow is a string
+console.log(true, false, 'true', 'false')
+
+let boolEmail = 'fakeemail@boolemail.com';
+//let boolresult = email.includes('@'); // returns true because 'fakeemail@boolemail.com' has '@'
+let names = ['mario', 'luigi', 'toad'];
+let boolresult = names.includes('bowswer'); // returns false.. bowser is not in the array
+console.log(boolresult);
