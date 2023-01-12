@@ -67,8 +67,15 @@ let score = '100';
 //console.log(score + 1); // displays 1001
 score = Number(score); // forces score to become a number
 console.log(score + 1); // displays 101
+console.log(typeof score); //displays number ... comment out line 68 and it displays string instead.
 
-console.log(typeof score); //displays number 
+/* If you try and turn something into a number that isn't, NaN will display
+eg. let result = Number('hello');
+console.log(result);    displays NaN
+Reverse can be done with a string. 
+let result = String(50);
+eg. console.log(result, typeof result);     displays string.... use typeof to see datatype
+Boolean() can also be used*/
 
 /* arrays */
 //positions starts at 0
@@ -108,3 +115,4 @@ let boolEmail = 'fakeemail@boolemail.com';
 let names = ['mario', 'luigi', 'toad'];
 let boolresult = names.includes('bowswer'); // returns false.. bowser is not in the array
 console.log(boolresult);
+
