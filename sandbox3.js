@@ -162,3 +162,43 @@ ppl.forEach(person =>{
 console.log(html);
 ul.innerHTML = html; // to display on html file.
 
+/* Object literals */
+// All use use curly brackets for object literals
+// Key-Value pair: name is the key and Crystal is the value.
+let user = {
+    name: 'Crystal',
+    age: 30,
+    email: 'crystal@gmail.com',
+    location: 'berlin',
+    blogs: ['why mac & cheese rules', '10 ways to use jam'],
+    login: function(){
+        console.log('the user is logged in');
+    },
+    logout: function(){
+        console.log('the user is logged out');
+    },
+    logBlogs: function(){
+        //console.log('blogs'); // does not display because blogs is not defined... we need a way to access the blog
+        // we use 'this' keyword because it refers to 'this user' object.
+        //this: is a context object that represents the context in which the current code is executed
+        //console.log(this);
+        console.log('this user has written the following blog:');
+        this.blogs.forEach(blog => {
+             console.log(blog)
+        })
+    }
+}; //use semicolon
+//example 1
+// console.log(user); // displays all the user information
+// console.log(user.name); // displays name only
+
+// user.age = 35; // updates the value
+// console.log(user.age); // displays the new value
+//example 2
+//user.login();
+//user.logout();
+const name = 'mario';
+name.toUpperCase();
+
+user.logBlogs();
+console.log(this);
